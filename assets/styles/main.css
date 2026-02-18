@@ -119,6 +119,38 @@ section:not(#hero-section-ctn) {
   filter: hue-rotate(300deg);
 }
 
+.hero-cta-btn {
+  align-items: center;
+  background-color: var(--accent);
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-size: 16px;
+  justify-content: center;
+  text-decoration: none;
+  min-height: 2rem;
+  min-width: 4rem;
+  transition: all 250ms;
+}
+
+.hero-cta-btn:hover,
+.hero-cta-btn:focus {
+  background-color: #ffc32a;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.hero-cta-btn:hover {
+  transform: translateY(-1px);
+}
+
+.hero-cta-btn:active {
+  background-color: #c85000;
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
+
 #hero-content {
   display: flex;
   justify-content: center;
