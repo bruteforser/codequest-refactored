@@ -182,7 +182,7 @@ section:not(#hero-section-ctn) {
   margin-top: 30px;
 }
 
-.card-container:not(img) {
+.card-container {
   color: var(--primary-bg);
 }
 
