@@ -78,10 +78,6 @@ section:not(#hero-section-ctn) {
   color: var(--easy-white);
 }
 
-#nav-bar a:visited {
-  color: cyan;
-}
-
 #nav-bar a:hover {
   color: var(--accent);
   text-decoration: underline;
