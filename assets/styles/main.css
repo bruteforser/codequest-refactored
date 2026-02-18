@@ -205,7 +205,8 @@ button:active {
   align-items: center;
 }
 
-.hr-line {
+.hr-line,
+.hr-line-inverted {
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -213,12 +214,24 @@ button:active {
   width: 100%;
 }
 
+.hr-line-inverted {
+  color: var(--primary-bg);
+}
+
 .hr-line::before,
 .hr-line::after {
   content: "";
   flex-grow: 1;
   height: 1px;
-  background-color: #cbd5e1;
+  background-color: var(--easy-white);
+}
+
+.hr-line-inverted::before,
+.hr-line-inverted::after {
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+  background-color: var(--primary-bg);
 }
 
 .section-heading {
@@ -266,9 +279,26 @@ button:active {
   color: var(--primary-bg);
 }
 
+#testimonials {
+  background: var(--muted-bg);
+}
+
+#testimonials > h1 {
+  color: var(--primary-bg)
+}
+
+#project-showcase {
+  background: url(../../assets/images/hero-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 60vh;
+}
+
 #project-container-master {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .project-card {
@@ -309,4 +339,10 @@ button:active {
 
 .pcard-4 {
   background-image: url(../images/project-4.png);
+}
+
+#cta-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
