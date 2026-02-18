@@ -60,9 +60,13 @@ section:not(#hero-section-ctn) {
   align-items: center;
 }
 
-#nav-bar li {
+#nav-bar ul {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
   list-style: none;
-  margin: auto 10px;
+  margin: 0;
+  padding: 0;
 }
 
 .logo-txt-color {
